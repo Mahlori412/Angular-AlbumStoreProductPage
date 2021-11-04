@@ -6,10 +6,8 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map'
 import { Album } from './album';
 
-import { Track } from './track';
+import { Product } from './product';
 
-import {Product} from './product';
-import { response } from 'express';
 
 @Injectable()
 export class ProductService {
@@ -26,7 +24,7 @@ export class ProductService {
 
   getProducts():Observable<Product[]> {
     return this._http.get(this._productUrl).map(response =>
-      <Product[]>response.json())
+      <Product[]>response.json());
   }
 
 }
