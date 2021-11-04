@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ProductService } from 'app/product.service';
-import { response } from 'express';
+import { ProductService } from '../product.service';
+
 
 @Component({
   selector: 'app-product-description',
